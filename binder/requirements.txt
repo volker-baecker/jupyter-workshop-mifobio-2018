@@ -2,4 +2,4 @@ tifffile >= 0.14.0
 matplotlib >= 2.2.2
 numpy
 scipy
-skimage
+scikit-image
