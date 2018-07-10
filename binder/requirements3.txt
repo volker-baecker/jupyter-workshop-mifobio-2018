@@ -1,6 +1,0 @@
-tifffile >= 0.14.0
-matplotlib >= 2.2.2
-numpy
-scipy
-scikit-image
-centrosome >= 1.0.9
