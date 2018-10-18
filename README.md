@@ -62,7 +62,7 @@ docker run -d --name omero-web --link omero-server:omero -p 4080:4080 openmicros
 ```
 
 It will launch all services : PostgreSQL server, OMERO.server and OMERO.web.
-All data needed for postgres database are saved inside **omero-db** and all data needed for server are saved inside omero-data.
+All data needed for postgres database are saved inside **omero-db** and all data needed for server are saved inside **omero-data**.
 
 To connect to the server with the OMERO.web client, go to [https://localhost](https://localhost:4080).
 Default admin credentials are `root` and `omero-root-password`.
@@ -71,7 +71,8 @@ To connect to the server with the OMERO Insight client use `localhost` as a serv
 
 ## Import Images to OMERO with OMERO.Insight client
 
-You can follow these instructions on this [page](https://help.openmicroscopy.org/importing-data-5.html) to import image data onto the OMERO server. The goal is to import images located inside jupyter-workshop-mifobio-2018/exercises/images/PK-10B-pl1 and jupyter-workshop-mifobio-2018/exercises/images/PK-11B-pl1 directories. You can visualize an example as below onto the omero web.
+You can follow these instructions on this [page](https://help.openmicroscopy.org/importing-data-5.html) to import image data onto the OMERO server.   
+The goal is to import images located inside jupyter-workshop-mifobio-2018/exercises/images/PK-10B-pl1 and jupyter-workshop-mifobio-2018/exercises/images/PK-11B-pl1 directories. You can visualize an example as below onto the omero web.
 ![](capture_omero-web.png?raw=true)
 
 ## Run a jupyter container
