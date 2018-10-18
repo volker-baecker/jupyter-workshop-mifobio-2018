@@ -43,7 +43,7 @@ You can download your omero client according to your operating system in this [p
 
 Copy and paste these instructions on a terminal:
 
-``shell
+```shell
 cd ~
 git clone https://github.com/MontpellierRessourcesImagerie/jupyter-workshop-mifobio-2018.git
 cd jupyter-workshop-mifobio2018
