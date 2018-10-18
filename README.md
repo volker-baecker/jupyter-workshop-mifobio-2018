@@ -72,6 +72,7 @@ To connect to the server with the OMERO Insight client use `localhost` as a serv
 ## Import Images to OMERO with OMERO.Insight client
 
 You can follow these instructions on this [page](https://help.openmicroscopy.org/importing-data-5.html) to import image data onto the OMERO server. The goal is to import images located inside jupyter-workshop-mifobio-2018/exercises/images/PK-10B-pl1 and jupyter-workshop-mifobio-2018/exercises/images/PK-11B-pl1 directories. You can visualize an example as below onto the omero web.
+![](capture_omero-web.png?raw=true)
 
 ## Run a jupyter container
 
