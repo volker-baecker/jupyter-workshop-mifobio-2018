@@ -77,7 +77,7 @@ The goal is to import images located inside jupyter-workshop-mifobio-2018/exerci
 
 ## Run a jupyter container
 
-To run a jupyter notebook, i use a slighly modified version of a dockerfile given by [**ome**](https://github.com/ome/training-notebooks).
+To run a jupyter notebook, i use a slightly modified version of a dockerfile given by [**ome**](https://github.com/ome/training-notebooks).
 To run jupyter notebook simply do:
 
 ```shell
