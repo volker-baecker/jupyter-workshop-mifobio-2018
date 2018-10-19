@@ -1,0 +1,11 @@
+channels:
+- bioconda
+- conda-forge
+- defaults
+dependencies:
+- r-base
+- r-devtools
+- r-irdisplay
+- r-irkernel
+- r-tidyverse
+prefix: /opt/conda/envs/R

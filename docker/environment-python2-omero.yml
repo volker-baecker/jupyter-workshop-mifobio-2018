@@ -1,5 +1,12 @@
 name: python2
 channels:
 - bioconda
+- conda-forge
 dependencies:
-- python-omero
+- python-omero=5.4.7
+- pip=10.*
+- scikit-image
+- scipy
+- matplotlib
+- pip:
+  - centrosome
