@@ -56,7 +56,7 @@ To run OMERO simply do:
 ```shell
 docker volume create --name omero-db
 docker volume create --name omero-data
-docker run -d --name postgres -e POSTGRES_PASSWORD=postgres postgres
+docker run -d --name postgres -e POSTGRES_PASSWORD=postgres -v omero-db:/var/lib/postgresql/data postgres
 docker run -d --name omero-server --link postgres:db -e CONFIG_omero_db_user=postgres -e CONFIG_omero_db_pass=postgres -e CONFIG_omero_db_name=postgres -e ROOTPASS=omero-root-password -v omero-data:/OMERO -p 4063:4063 -p 4064:4064 openmicroscopy/omero-server:latest
 docker run -d --name omero-web --link omero-server:omero -p 4080:4080 openmicroscopy/omero-web-standalone:latest
 ```
