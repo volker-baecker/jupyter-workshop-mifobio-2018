@@ -82,13 +82,14 @@ To run a jupyter notebook, i use a slightly modified version of a dockerfile giv
 To run jupyter notebook simply do:
 
 ```shell
+docker volume create --name notebook
 #create workshop-mifobio2018 image
 docker build -t workshop-mifobio2018 .
 #run workshop-mifobio2018 image
-docker run -it --net host -p 8888:8888 -v `*path_to_exercises_folder*`:/home/jovyan/mifobio_2018/exercises workshop-mifobio2018
+docker run -it --net host -p 8888:8888 -v notebook:/home/jovyan/mifobio_2018/exercises workshop-mifobio2018
 ```
-Follow instructions on the terminal.
-All update/new notebooks in exercises are will save in your local directory `path_to_exercises_folder`
+Follow instructions on the terminal.   
+All update/new notebooks in exercises are will save inside **notebook**
 
 #### Docker commands
 
