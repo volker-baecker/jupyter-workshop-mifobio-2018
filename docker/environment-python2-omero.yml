@@ -6,6 +6,7 @@ dependencies:
 - python-omero=5.4.7
 - pip=10.*
 - scikit-image
+- numpy
 - scipy
 - matplotlib
 - pip:
