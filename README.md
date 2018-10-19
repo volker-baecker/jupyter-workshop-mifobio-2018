@@ -6,7 +6,7 @@ These instructions will get you running on your local machine all exercises done
 
 ### Prerequisites
 
-You need to install `git`, `docker` and `omero insight`
+You need to install `git`, `docker ce > 17.09` and `omero insight`
 
 ### Installing Git
 
@@ -64,7 +64,7 @@ docker run -d --name omero-web --link omero-server:omero -p 4080:4080 openmicros
 It will launch all services : PostgreSQL server, OMERO.server and OMERO.web.
 All data needed for postgres database are saved inside **omero-db** and all data needed for server are saved inside **omero-data**.
 
-To connect to the server with the OMERO.web client, go to [https://localhost](https://localhost:4080).
+To connect to the server with the OMERO.web client, go to [http://localhost](http://localhost:4080).
 Default admin credentials are `root` and `omero-root-password`.
 
 To connect to the server with the OMERO Insight client use `localhost` as a server address and `4064` (by default) for the port.
@@ -72,7 +72,8 @@ To connect to the server with the OMERO Insight client use `localhost` as a serv
 ## Import Images to OMERO with OMERO.Insight client
 
 You can follow these instructions on this [page](https://help.openmicroscopy.org/importing-data-5.html) to import image data onto the OMERO server.   
-The goal is to import images located inside jupyter-workshop-mifobio-2018/exercises/images/PK-10B-pl1 and jupyter-workshop-mifobio-2018/exercises/images/PK-11B-pl1 directories. You can visualize an example as below onto the omero web.
+The goal is to import images located inside jupyter-workshop-mifobio-2018/exercises/images/PK-10B-pl1 and jupyter-workshop-mifobio-2018/exercises/images/PK-11B-pl1 directories. For this, you can create into omero web two projects name respectively PK-10B-pl1 and PK-11B-pl1.
+You can visualize an example as below onto the omero web.
 ![](capture_omero-web.png?raw=true)
 
 ## Run a jupyter container
@@ -86,7 +87,7 @@ docker build -t workshop-mifobio2018 .
 #run workshop-mifobio2018 image
 docker run -it --net host -p 8888:8888 -v `*path_to_exercises_folder*`:/home/jovyan/mifobio_2018/exercises workshop-mifobio2018
 ```
-
+Follow instructions on the terminal.
 All update/new notebooks in exercises are will save in your local directory `path_to_exercises_folder`
 
 #### Docker commands
