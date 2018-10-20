@@ -1,15 +1,6 @@
 FROM imagedata/jupyter-docker:0.8.1
 MAINTAINER ome-devel@lists.openmicroscopy.org.uk
 
-# install docker 
-RUN apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-
 # create a python2 environment (for OMERO-PY compatibility)
 ADD docker/environment-python2-omero.yml .setup/
 RUN conda env update -n python2 -q -f .setup/environment-python2-omero.yml
