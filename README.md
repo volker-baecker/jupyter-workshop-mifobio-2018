@@ -1,5 +1,9 @@
 # Workshop held at MIFOBIO 2018
 
+## Start on mybinder (experimental - not working yet)
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/volker-baecker/jupyter-workshop-mifobio-2018/v0.2)
+
 ## Getting Started
 
 These instructions will get you running on your local machine all exercises done at mifobio.
